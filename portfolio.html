@@ -1,11 +1,190 @@
+<!-- Owner: Henock Kiniki -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Portfolio Website | HK</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- box icons link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
-<body>
+
+
+<body> 
     
+    <header class="header">
+        <a href="#home" class="logo">HK's Portfolio</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>  
+        </nav>
+    </header>
+
+
+    <!-- Home Page -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3><span class="typedText"></span></h3>
+            <h1>Henock Kiniki</h1>
+            <h3>I am a <span class="typedText2"></span></h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Quasi asperiores eos ducimus explicabo mollitia vitae veritatis eaque. 
+                Iusto accusamus, odio repellat iste maiores culpa velit dignissimos, 
+                dolmorum incidunt, consequatur cupiditate.</p>
+                
+        </div> 
+        <div class="home-img">
+            <img src="images/me.jpg"
+            alt="A picture of me" style="height: 450px; width: 450px;">
+        </div>
+    </section>
+
+
+     <!-- About Page -->
+     <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/me.jpg" alt="A picture of me" style="height: 300px; width: 300px;">
+        </div>
+
+        <div class="about-content">
+         <h2 class="heading">About <span>Me</span></h2>  
+         <h3>Software Developer</h3>
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quis vel quae
+             reprehenderit repellat commodi ratione nisi dolores distinctio, illum nesciunt dignissimos, 
+             fugiat eius impedit saepe! Ipsam maxime quaerat modi.
+         </p>
+         <a href="#" class="btn">Read More</a>
+        </div>
+     </section>
+     
+
+     <!-- Services Page -->
+     <section class="services" id="services">
+       <h2 class="heading">Our <span>Services</span>
+      </h2> 
+
+      <div class="services-container">
+        <div class="services-box">
+            <i class="bx bx-code-alt"></i>
+            <h3>Web Development</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi cumque deleniti dolorum alias, 
+                explicabo tempora exercitationem itaque voluptas expedita aliquam architecto veniam, tenetur officia 
+                similique eum reiciendis tempore sed reprehenderit?</p>
+                <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+            <i class="bx bx-code-alt"></i>
+            <h3>Android Development</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi cumque deleniti dolorum alias, 
+                explicabo tempora exercitationem itaque voluptas expedita aliquam architecto veniam, tenetur officia 
+                similique eum reiciendis tempore sed reprehenderit?</p>
+                <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+            <i class="bx bx-code-alt"></i>
+            <h3>Web Hosting</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi cumque deleniti dolorum alias, 
+                explicabo tempora exercitationem itaque voluptas expedita aliquam architecto veniam, tenetur officia 
+                similique eum reiciendis tempore sed reprehenderit?</p>
+                <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+     </section>
+
+
+     <!-- Skills Page -->
+     <section class="skills" id="skills">
+        <h2 class="heading">Current <span>Skills</span> 
+
+            <div class="skills-container">
+                <h3>
+                    Page still in development,
+                    Coming Soon...
+                </h3>
+            </div>
+        </h2>
+     </section>
+
+     
+     <!-- Contact Page -->
+     <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message..."></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+     </section>
+
+     <div id="backToTop">&#8593;</div>
+
+     <!-- Footer -->
+     <footer class="footer">
+        <div class="footer-content">
+            <h3>Contact Information</h3>
+            <p>Email: example@email.com</p>
+            <p>Phone: +1 123 456 7890</p>
+            <p>Address: 123 Street, City, Country</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About </a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="#" target="_blank">Facebook</a></li>
+                <li><a href="#" target="_blank">Twitter</a></li>
+                <li><a href="#" target="_blank">Instagram</a></li>
+                <li><a href="#" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Henock</p>
+        </div>
+
+   
+
+        </div>
+     </footer>
+
+     <!-- JS Classes links -->
+      <!-- ----- TYPING JS Link ----- -->
+ <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+ <!-- ----- SCROLL REVEAL JS Link----- -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- My JS file -->
+<script src="js/portfolio.js"></script>
+
 </body>
 </html>
