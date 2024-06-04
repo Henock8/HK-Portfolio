@@ -18,6 +18,16 @@
     --second-bg-color: #e3d7d7;
     --text-color: #070707;
     --main-color: #0ef;
+    --progressSpan-color: #fff;
+   
+}
+
+.dark-theme{
+    --bg-color: #070707;
+    --second-bg-color: #1e1e1e;
+    --text-color: #fff;
+    --main-color: #0ef;
+    --progressSpan-color: #0ef;
 }
 
 html{
@@ -78,6 +88,10 @@ transition: .3s;
 
 }
 
+#icon{
+    width: 20px;
+    cursor: pointer;
+}
 
 #menu-icon {
 font-size: 3.6rem;
@@ -94,6 +108,7 @@ display: none;
 .home-img{
     width: 35vw;
     animation: floatingImage 4s ease-in-out infinite;
+
 }
 @keyframes floatingImage {
     0% {
@@ -190,6 +205,11 @@ gap: 2rem;
     transform: scale(1.02);
 }
 
+.services-container .services-box:hover i {
+    color: black;
+}
+
+
 .services-box i {
     font-size: 7rem;
     color: var(--main-color);
@@ -207,6 +227,7 @@ gap: 2rem;
 .skills {
     
     background: var(--second-bg-color);
+    
 }
 
 
@@ -269,12 +290,30 @@ gap: 2rem;
 /* Footer styling */
 
 .footer-content, .footer-links, .footer-social {
+    font-size: medium;
     margin-bottom: 20px;
 }
 
 .footer-links ul, .footer-social ul {
     list-style-type: none;
     padding: 0;
+}
+
+.footer-links a:hover {
+color: #0ef;
+}
+
+.footer-links a {
+    color: blue;
+}
+
+
+.footer-social a:hover {
+    color: #0ef;
+}
+
+.footer-social a i {
+    font-size: 1.5rem;
 }
 
 .footer-links ul li, .footer-social ul li {
@@ -329,14 +368,30 @@ border-color: white;
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
+    
+
    .header {
     padding: 2rem 3%;
    }
 
-   section {
-    padding: 10rem 3% 2rem;
-   }
+
+
+   .home {
+    display: flex;
+    align-items: center; /* Optional: centers content vertically */
+  }
+  
+  .home-img img {
+    width: 40%; /* Adjust width as needed for balance */
+    margin-right: 2rem; /* Adjust spacing between image and text */
+  }
+  
+  .home-content {
+    flex: 1; /* Allow text content to fill remaining space */
+  }
+
+ 
 
    .services {
     padding-bottom: 7rem;
@@ -350,6 +405,7 @@ border-color: white;
     padding: 2rem 3%;
    }
 }
+
 
 @media (max-width: 768px) {
     #menu-icon {
@@ -393,7 +449,8 @@ border-color: white;
     .home-img img {
         width: 70vw;
         margin-top: 4rem;
-        margin-left: -10rem;
+        margin-left: -15rem;
+        
     }
 
     .about {
@@ -419,11 +476,14 @@ border-color: white;
     .contact form .input-box input {
         width: 100%;
     }
+
+    
 }
 
 @media (max-width: 365px) {
     .home-img img { 
-        width: 99vw;
+        width: 90vw;
+       
     }
 
     .about-img img {
@@ -433,4 +493,136 @@ border-color: white;
     .footer {
         flex-direction: column-reverse;
     }
+}
+
+.read-more {
+    display: block; /* Ensure button is visible */
+}
+
+.read-less {
+    display: none; /* Initially hide read less button */
+}
+
+.read-more1 {
+    display: block; /* Ensure button is visible */
+}
+
+.read-less1 {
+    display: none; /* Initially hide read less button */
+}
+
+.read-more2 {
+    display: block; /* Ensure button is visible */
+}
+
+.read-less2 {
+    display: none; /* Initially hide read less button */
+}
+
+.read-more3 {
+    display: block; /* Ensure button is visible */
+}
+
+.read-less3 {
+    display: none; /* Initially hide read less button */
+}
+
+.btn {
+    font-size: medium;
+}
+
+.btn1 {
+    font-size: medium;
+    border-radius: 10px;
+    color: var(--main-color);
+    background-color: var(--second-bg-color);
+}
+
+.btn:hover {
+    color: var(--main-color);
+}
+
+.btn1:hover {
+    color: var(--text-color);
+    border-radius: 10px;
+    background-color: var(--main-color);
+}
+
+.services-container .services-box:hover .btn  {
+    color: darkblue;
+}
+
+.skills .skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.skills-row .skills-column {
+    flex: 1 1 40rem;
+    margin-top: 7rem;
+}
+
+
+.skills-column .title {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+}
+
+.skills-box .skills-content {
+    position: relative;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    border: .2rem solid var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.skills-box .skills-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.skills-box .skills-content:hover::before {
+  width: 100%;
+}
+
+.skills-content .progress {
+    padding: 1rem 0;
+}
+
+.skills-content .progress h3 {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progres-span {
+    color: var(--text-color);
+}
+
+.skills-content .progress .bar {
+    height: 2.5rem;
+    border-radius: .6rem;
+    border: .2rem solid black;
+    padding: .5rem;
+    margin: 1rem 0;
+}
+
+.skills-content .progress .bar span {
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background: black;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
+    width: 90%;
 }
